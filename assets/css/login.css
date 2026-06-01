@@ -6,6 +6,13 @@
 /* IZQUIERDA */
 
 .left-panel{
+    width:42%;
+    background:linear-gradient(180deg,#022b8d,#00124b);
+    color:white;
+    margin:20px;
+    border-radius:20px;
+    padding:60px;
+    
     display:grid;
     grid-template-rows:
         auto
@@ -14,6 +21,9 @@
         auto
         auto
         1fr;
+    flex-direction:column;
+
+    overflow:hidden;
 }
 
 .logo{
@@ -65,10 +75,8 @@
 }
 
 .phones{
-    margin-top:auto;
-    display:flex;
-    justify-content:center;
-    align-items:flex-end;
+    align-self:end;
+    justify-self:center;
 }
 
 .phones img{
