@@ -12,7 +12,10 @@
     margin:20px;
     border-radius:20px;
     padding:60px;
-    position:relative;
+    
+    display:flex;
+    flex-direction:column;
+
     overflow:hidden;
 }
 
@@ -65,13 +68,17 @@
 }
 
 .phones{
-    position:absolute;
-    bottom:20px;
-    right:20px;
+    margin-top:auto;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
 }
 
 .phones img{
-    width:420px;
+    width:100%;
+    max-width:360px;
+    height:auto;
+    object-fit:contain;
 }
 
 /* DERECHA */
