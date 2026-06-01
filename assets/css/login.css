@@ -6,17 +6,14 @@
 /* IZQUIERDA */
 
 .left-panel{
-    width:42%;
-    background:linear-gradient(180deg,#022b8d,#00124b);
-    color:white;
-    margin:20px;
-    border-radius:20px;
-    padding:60px;
-    
-    display:flex;
-    flex-direction:column;
-
-    overflow:hidden;
+    display:grid;
+    grid-template-rows:
+        auto
+        auto
+        auto
+        auto
+        auto
+        1fr;
 }
 
 .logo{
@@ -213,4 +210,101 @@ label{
     color:#8f97a8;
     text-decoration:none;
     margin-left:25px;
+}
+
+/* TABLET */
+
+@media (max-width: 1200px){
+
+    .left-panel{
+        width:45%;
+        padding:40px;
+    }
+
+    .left-panel h1{
+        font-size:52px;
+    }
+
+    .phones img{
+        max-width:300px;
+    }
+
+    .form-wrapper{
+        width:90%;
+        max-width:520px;
+    }
+}
+
+/* MOVIL */
+
+@media (max-width: 900px){
+
+    .login-container{
+        flex-direction:column;
+    }
+
+    .left-panel{
+        width:auto;
+        margin:15px;
+        min-height:auto;
+    }
+
+    .right-panel{
+        padding:20px;
+    }
+
+    .form-wrapper{
+        width:100%;
+    }
+
+    .left-panel h1{
+        font-size:42px;
+    }
+
+    .description{
+        font-size:18px;
+    }
+
+    .phones{
+        margin-top:30px;
+    }
+
+    .phones img{
+        max-width:250px;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+
+/* TELEFONOS PEQUEÑOS */
+
+@media (max-width: 500px){
+
+    .left-panel{
+        padding:25px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .left-panel h1{
+        font-size:34px;
+    }
+
+    .feature{
+        font-size:18px;
+    }
+
+    .form-wrapper h2{
+        font-size:38px;
+    }
+
+    .btn-login{
+        height:52px;
+    }
 }
