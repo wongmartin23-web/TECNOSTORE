@@ -94,7 +94,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <div class="input-group">
                         <img src="./assets/img/correo.png">
-                        <input type="email" placeholder="ejemplo@correo.com">
+                        <input
+                            type="email"
+                            name="correo">
                     </div>
 
                     <label>Contraseña</label>
@@ -102,7 +104,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="input-group">
                         <img src="./assets/img/candado.png">
 
-                        <input type="password" id="password" placeholder="********">
+                        <input
+                            type="password"
+                            name="password">
 
                         <img src="./assets/img/ojo_cerrado.png"
                             class="eye"
@@ -150,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <div class="register">
                     ¿No tienes cuenta?
-                    <a href="#">
+                    <a href="./pages/register.php">
                         Crear cuenta
                     </a>
                 </div>

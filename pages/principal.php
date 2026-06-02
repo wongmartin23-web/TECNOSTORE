@@ -1,15 +1,16 @@
 <?php
 
+require_once __DIR__ . '/../middleware/Auth.php';
+
 $pagina_actual = 'inicio';
 
 ?>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/header.css">
+<link rel="stylesheet" href="../assets/css/footer.css">
+<link rel="stylesheet" href="../assets/css/principal.css">
 
-<link rel="stylesheet" href="./assets/css/style.css">
-<link rel="stylesheet" href="./assets/css/header.css">
-<link rel="stylesheet" href="./assets/css/footer.css">
-<link rel="stylesheet" href="./assets/css/principal.css">
-
-<?php include './components/header.php'; ?>
+<?php include __DIR__ . '/../components/header.php'; ?>
 
 <section class="hero">
 
@@ -101,4 +102,4 @@ $pagina_actual = 'inicio';
 
 </section>
 
-<?php include './components/footer.php'; ?>
+<?php include __DIR__ . '/../components/footer.php'; ?>
