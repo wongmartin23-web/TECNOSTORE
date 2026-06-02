@@ -1,3 +1,14 @@
+<?php
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+    $_SESSION['usuario'] = 'cliente';
+
+    header('Location: index.php');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -77,7 +88,7 @@
                     Bienvenido de nuevo a TecnoStore
                 </p>
 
-                <form>
+                <form method="POST" action="index.php">
 
                     <label>Correo electrónico</label>
 
