@@ -33,7 +33,19 @@ if (!isset($pagina_actual)) {
                 <span class="badge">2</span>
             </a>
 
-            <a href="#">👤</a>
+            <?php if (isset($_SESSION['usuario'])): ?>
+
+                <span class="user-name">
+                    <?= htmlspecialchars($_SESSION['usuario']['nombre']) ?>
+                </span>
+
+                <a
+                    href="<?= $base_url ?>logout.php"
+                    class="logout-btn">
+                    Cerrar Sesión
+                </a>
+
+            <?php endif; ?>
 
         </div>
 
@@ -41,7 +53,7 @@ if (!isset($pagina_actual)) {
 
     <nav class="navbar">
 
-        <a href="index.php"
+        <a href="<?= $base_url ?>index.php"
             class="<?= $pagina_actual == 'inicio' ? 'active' : '' ?>">
             Inicio
         </a>

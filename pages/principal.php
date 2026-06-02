@@ -4,6 +4,8 @@ require_once __DIR__ . '/../middleware/Auth.php';
 
 $pagina_actual = 'inicio';
 
+$base_url = '../';
+
 ?>
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/header.css">

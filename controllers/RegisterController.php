@@ -37,7 +37,16 @@ class RegisterController
 
             return;
         }
-
+        if (
+            empty($nombre) ||
+            empty($apellido) ||
+            empty($correo) ||
+            empty($password)
+        ) {
+            $_SESSION['error'] =
+                "Complete todos los campos";
+            return;
+        }
         $usuario->registrar(
             $nombre,
             $apellido,
