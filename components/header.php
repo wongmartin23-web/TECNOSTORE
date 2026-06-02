@@ -10,7 +10,7 @@ if (!isset($pagina_actual)) {
 
     <div class="topbar">
 
-        <div class="logo">
+        <div class="header-logo">
             TECNOSTORE
         </div>
 

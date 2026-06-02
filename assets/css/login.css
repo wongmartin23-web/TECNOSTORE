@@ -26,12 +26,12 @@
     overflow:hidden;
 }
 
-.logo{
+.login-logo{
     font-size:28px;
     font-weight:700;
 }
 
-.logo span{
+.login-logo span{
     color:#2990ff;
 }
 
@@ -296,7 +296,7 @@ label{
         padding:25px;
     }
 
-    .logo{
+    .login-logo{
         font-size:24px;
     }
 

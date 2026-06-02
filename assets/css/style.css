@@ -1,10 +1,72 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+/* ===================================
+   RESET
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#f5f7fb;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===================================
+   VARIABLES
+=================================== */
+
+:root {
+
+    --primary: #0d5eff;
+    --primary-dark: #000f37;
+
+    --white: #ffffff;
+
+    --text: #1f2937;
+    --gray: #7d8597;
+
+    --border: #d9dee8;
+
+    --success: #1c9d36;
+    --danger: #e53935;
+}
+
+/* ===================================
+   CONTAINER GLOBAL
+=================================== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
