@@ -46,20 +46,20 @@
 }
 
 .admin-menu a {
-
-    color: white;
-
+    display: block;
+    padding: 18px 24px;
+    color: #fff;
     text-decoration: none;
-
-    padding: 18px;
-
     border-radius: 10px;
+    transition: .3s;
+}
+
+.admin-menu a:hover {
+    background: rgba(255, 255, 255, .08);
 }
 
 .admin-menu a.active {
-
-    background: #1565ff;
-
+    background: #0D5EFF;
     font-weight: 700;
 }
 
@@ -96,15 +96,15 @@
     padding: 0 30px;
 }
 
-.back-store{
+.back-store {
 
-    display:block;
+    display: block;
 
-    color:white;
+    color: white;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    padding:15px;
+    padding: 15px;
 
-    margin-top:auto;
+    margin-top: auto;
 }

@@ -1,3 +1,11 @@
+<?php
+
+if (!isset($pagina_actual)) {
+    $pagina_actual = '';
+}
+
+?>
+
 <div class="admin-sidebar">
 
     <div class="admin-logo">
@@ -7,32 +15,45 @@
 
     <nav class="admin-menu">
 
-
-        <a class="active" href="#">
+        <a
+            class="<?= $pagina_actual == 'dashboard' ? 'active' : '' ?>"
+            href="../admin/dashboard.php">
             Dashboard
         </a>
 
-        <a href="#">
+        <a
+            class="<?= $pagina_actual == 'productos' ? 'active' : '' ?>"
+            href="../admin/productos.php">
             Productos
         </a>
 
-        <a href="#">
+        <a
+            class="<?= $pagina_actual == 'pedidos' ? 'active' : '' ?>"
+            href="../admin/pedidos.php">
             Pedidos
         </a>
 
-        <a href="#">
+        <a
+            class="<?= $pagina_actual == 'clientes' ? 'active' : '' ?>"
+            href="../admin/clientes.php">
             Clientes
         </a>
 
-        <a href="#">
+        <a
+            class="<?= $pagina_actual == 'pagos' ? 'active' : '' ?>"
+            href="../admin/pagos.php">
             Pagos
         </a>
 
-        <a href="#">
+        <a
+            class="<?= $pagina_actual == 'reportes' ? 'active' : '' ?>"
+            href="../admin/reportes.php">
             Reportes
         </a>
 
-        <a href="#">
+        <a
+            class="<?= $pagina_actual == 'configuracion' ? 'active' : '' ?>"
+            href="../admin/configuracion.php">
             Configuración
         </a>
 

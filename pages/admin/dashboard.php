@@ -1,6 +1,7 @@
 <?php
-
+$pagina_actual = 'dashboard';
 require_once '../../middleware/AdminAuth.php';
+
 
 ?>
 
