@@ -127,34 +127,45 @@
         gap: 25px;
     }
 }
+.user-name{
 
-.user-name {
+    color:white;
 
-    color: white;
-
-    font-weight: 600;
-
-    margin-left: 10px;
+    font-weight:600;
 }
 
-.logout-btn {
+.admin-btn{
 
-    background: #e53935;
+    background:#1565ff;
 
-    color: white !important;
+    color:white !important;
 
-    padding: 10px 18px;
+    padding:10px 18px;
 
-    border-radius: 8px;
+    border-radius:8px;
 
-    font-size: 10px;
+    text-decoration:none;
 
-    font-weight: 4  00;
+    font-size:14px;
+}
 
-    transition: .3s;
+.logout-btn{
+
+    background:#dc2626;
+
+    color:white !important;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-size:14px;
 }
 
 .logout-btn:hover {
 
-    background: #c62828;
+    background: #f34242;
 }
+

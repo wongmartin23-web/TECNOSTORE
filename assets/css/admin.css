@@ -1,0 +1,110 @@
+.admin-layout {
+
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+
+    width: 280px;
+
+    background: #000f37;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 20px;
+}
+
+.admin-logo {
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 50px;
+}
+
+.admin-logo span {
+
+    display: block;
+
+    color: #1f6fff;
+
+    margin-top: 5px;
+}
+
+.admin-menu {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    flex: 1;
+}
+
+.admin-menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 18px;
+
+    border-radius: 10px;
+}
+
+.admin-menu a.active {
+
+    background: #1565ff;
+
+    font-weight: 700;
+}
+
+.logout-admin {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px;
+}
+
+.admin-content {
+
+    flex: 1;
+
+    background: #f5f7fb;
+}
+
+.admin-topbar {
+
+    height: 90px;
+
+    background: #000f37;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.back-store{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    margin-top:auto;
+}

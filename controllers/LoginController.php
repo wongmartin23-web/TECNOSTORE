@@ -16,8 +16,7 @@ class LoginController
 
         $usuario = new Usuario();
 
-        $datos =
-            $usuario->obtenerPorCorreo($correo);
+        $datos = $usuario->obtenerPorCorreo($correo);
 
         if (!$datos) {
 
@@ -34,8 +33,7 @@ class LoginController
             )
         ) {
 
-            $_SESSION['usuario'] =
-                $datos;
+            $_SESSION['usuario'] = $datos;
 
             header(
                 "Location: pages/principal.php"

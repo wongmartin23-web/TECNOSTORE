@@ -36,14 +36,28 @@ if (!isset($pagina_actual)) {
             <?php if (isset($_SESSION['usuario'])): ?>
 
                 <span class="user-name">
-                    
-                    <a href="#">👤<?= htmlspecialchars($_SESSION['usuario']['nombre']) ?></a>
+                    <?= $_SESSION['usuario']['nombre']; ?>
                 </span>
 
+                <?php
+                if (
+                    isset($_SESSION['usuario']['rol']) &&
+                    $_SESSION['usuario']['rol'] === 'Administrador'
+                ):
+                ?>
+
+                    <a
+                        href="../pages/admin/dashboard.php"
+                        class="admin-btn">
+                        Dashboard
+                    </a>
+
+                <?php endif; ?>
+
                 <a
-                    href="<?= $base_url ?>logout.php"
+                    href="../logout.php"
                     class="logout-btn">
-                    🚪
+                    Salir
                 </a>
 
             <?php endif; ?>
