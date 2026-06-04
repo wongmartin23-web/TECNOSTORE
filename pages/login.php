@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <section class="left-panel">
 
-            <div class="logo">
+            <div class="login-logo">
                 TECNO <span>STORE</span>
             </div>
 
@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <section class="right-panel">
 
             <div class="help">
-                ⓘ ¿Necesitas ayuda?
+                <a href="#">ⓘ ¿Necesitas ayuda?</a>
             </div>
 
             <div class="form-wrapper">

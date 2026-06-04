@@ -36,13 +36,14 @@ if (!isset($pagina_actual)) {
             <?php if (isset($_SESSION['usuario'])): ?>
 
                 <span class="user-name">
-                    <?= htmlspecialchars($_SESSION['usuario']['nombre']) ?>
+                    
+                    <a href="#">👤<?= htmlspecialchars($_SESSION['usuario']['nombre']) ?></a>
                 </span>
 
                 <a
                     href="<?= $base_url ?>logout.php"
                     class="logout-btn">
-                    Cerrar Sesión
+                    🚪
                 </a>
 
             <?php endif; ?>
