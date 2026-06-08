@@ -1,10 +1,19 @@
 <div class="admin-topbar">
 
-    <h1>Dashboard</h1>
+    <div class="topbar-title">
+        <?= isset($titulo_pagina) ? $titulo_pagina : 'Dashboard' ?>
+    </div>
 
     <div class="admin-user">
 
-        Hola, Administrador
+        <span>
+            Hola,
+            <?= $_SESSION['usuario']['nombre'] ?? 'Administrador' ?>
+        </span>
+
+        <div class="admin-avatar">
+            👤
+        </div>
 
     </div>
 
